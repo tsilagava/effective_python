@@ -10,7 +10,6 @@ for name, count in zip(names, counts):
         max_count = count
 
 
-print(longest_name)
 
 names.append('Rosalind')
 for name, count in zip(names, counts):
