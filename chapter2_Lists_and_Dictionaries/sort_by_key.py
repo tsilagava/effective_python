@@ -5,6 +5,8 @@ class Tool:
 
     def __repr__(self):
         return f'Tool({self.name!r}, {self.weight}) '
+
+
 #
 # tools = [
 #     Tool('level', 3.5),
@@ -26,7 +28,7 @@ places = ['home', 'work', 'New York', 'Paris']
 
 # places.sort()
 # print('Case sensitive: ', places)
-places.sort(key = lambda x:x.lower())
+places.sort(key=lambda x: x.lower())
 # print('Case insensitive: ', places)
 
 power_tools = [
@@ -36,15 +38,15 @@ power_tools = [
     Tool('sander', 4),
 ]
 
-power_tools.sort(key = lambda x : (x.weight, x.name))
+power_tools.sort(key=lambda x: (x.weight, x.name))
 print(power_tools)
 
-power_tools.sort(key = lambda x : (x.weight, x.name), reverse=True)
+power_tools.sort(key=lambda x: (x.weight, x.name), reverse=True)
 print(power_tools)
 
-power_tools.sort(key = lambda x : (-x.weight, x.name))
-print((power_tools))
+power_tools.sort(key=lambda x: (-x.weight, x.name))
+print(power_tools)
 
-power_tools.sort(key = lambda x:x.name)
-power_tools.sort(key = lambda x:x.weight, reverse=True)
-print((power_tools))
+power_tools.sort(key=lambda x: x.name)
+power_tools.sort(key=lambda x: x.weight, reverse=True)
+print(power_tools)

@@ -13,7 +13,8 @@
 #
 # *others, second_youngest, youngest = car_ages_descending
 # print(youngest, second_youngest, others)
+#
+# short_list = [1, 2]
+# first, second, *rest = short_list
+# print(first, second, rest)
 
-short_list = [1, 2]
-first, second, *rest = short_list
-print(first, second, rest)
